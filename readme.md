@@ -1,35 +1,25 @@
-# Order API
+# API de Pedidos
 
-API simples para gerenciamento de pedidos utilizando Node.js e Express.
+API desenvolvida em Node.js com Express e MongoDB para gerenciamento de pedidos.
 
-## Tecnologias usadas
-- Node.js
-- Express
+## Endpoints
 
-## Como instalar
+Criar pedido
+POST
+http://localhost:3000/order
 
-1. Clonar o projeto
-2. Instalar dependências
+Buscar pedido
+GET
+http://localhost:3000/order/:id
 
-npm install
+Listar pedidos
+GET
+http://localhost:3000/order/list
 
-## Como rodar o projeto
+Atualizar pedido
+PUT
+http://localhost:3000/order/:id
 
-node server.js
-
-O servidor rodará em:
-http://localhost:3000
-
-## Rotas da API
-
-Criar pedido:
-POST /order
-
-Listar pedidos:
-GET /order/list
-
-Buscar pedido:
-GET /order/:id
-
-Deletar pedido:
-DELETE /order/:id
+Deletar pedido
+DELETE
+http://localhost:3000/order/:id
